@@ -1,0 +1,142 @@
+/* body{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+     background-color: hsl(0, 0%, 95%);
+}
+
+#calculator{
+    font-family: 'Trebuchet MS';
+    background-color: black;
+    border-radius: 15px;
+    max-width: 500px;
+    overflow: hidden;
+    margin-top: 100px;
+}
+
+#display{
+    width: 100%;
+    padding: 20px;
+    font-size: 5rem;
+    text-align: right;
+    border: none;
+    background-color: hsl(0, 0%, 20%);
+    color: white;
+}
+
+#keys{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 25px;
+}
+
+
+button{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: none;
+    background-color: hsl(0, 0%, 30%);
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: hsl(0, 0%, 40%);
+}
+
+button:active{
+     background-color: hsl(0, 0%, 50%);
+}
+
+.operator-btn{
+    color: blue;
+}
+.operator-btn:hover{
+    background-color: aquamarine;
+}
+
+.operator-btn:active{
+    background-color: aqua;
+} */
+
+ 
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: #0d0f14;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Inter', sans-serif;
+}
+
+.calculator {
+  background-color: #1b1e27;
+  border-radius: 25px;
+  padding: 20px;
+  width: 280px;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.5);
+}
+
+#display {
+  width: 100%;
+  height: 70px;
+  border: none;
+  background: none;
+  color: #fff;
+  font-size: 2rem;
+  text-align: right;
+  outline: none;
+  margin-bottom: 20px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+button {
+  background-color: #252a35;
+  color: white;
+  border: none;
+  font-size: 1.2rem;
+  height: 55px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background-color: #2e3442;
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+button:nth-child(4n) {
+  background-color: #23355a;
+  color: #4c9eff;
+}
+
+.zero {
+  grid-column: span 2;
+}
+
+button:last-child {
+  background-color: #4c9eff;
+  color: #fff;
+} 
