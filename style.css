@@ -66,27 +66,33 @@ button:active{
 } */
 
  
-
+/* 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+} */
 
 body {
   height: 100vh;
-  background-color: #0d0f14;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter';
+}
+
+.calculator-top{
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  cursor: pointer;
 }
 
 .calculator {
   background-color: #1b1e27;
   border-radius: 25px;
   padding: 20px;
-  width: 280px;
+  max-width: 210px;
   box-shadow: 0 4px 25px rgba(0, 0, 0, 0.5);
 }
 
@@ -109,6 +115,7 @@ body {
 }
 
 button {
+   box-shadow: 0 4px 25px rgba(0, 0, 0, 0.5);
   background-color: #252a35;
   color: white;
   border: none;
@@ -117,6 +124,7 @@ button {
   border-radius: 12px;
   cursor: pointer;
   transition: 0.2s;
+ 
 }
 
 button:hover {
@@ -128,12 +136,22 @@ button:active {
 }
 
 button:nth-child(4n) {
-  background-color: #23355a;
   color: #4c9eff;
 }
-
-.zero {
-  grid-column: span 2;
+button:nth-child(2) {
+  color: #4c9eff;
+}
+button:nth-child(1) {
+  color: #4c9eff;
+}
+button:nth-child(3) {
+  color: #4c9eff;
+}
+button:nth-child(19) {
+  color: #4c9eff;
+}
+button:nth-child(18) {
+  color: #4c9eff;
 }
 
 button:last-child {
