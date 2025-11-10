@@ -16,3 +16,7 @@ function calculate(){
         display.value = "Error";
     }
 }
+
+function deleteLast() {
+  display.value = display.value.slice(0, -1);
+}
